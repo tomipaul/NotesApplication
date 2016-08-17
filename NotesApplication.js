@@ -10,3 +10,7 @@ class NotesApplication {
 	create(note_content) {
 		this.notes.push(note_content);
 	}
+	
+	get(note_id) {
+		return this.notes[note_id].toString();
+	}
