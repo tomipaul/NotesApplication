@@ -18,3 +18,7 @@ class NotesApplication {
 	delete(note_id) {
 		this.notes.splice(note_id, 1);
 	}
+	
+	edit(note_id, new_content) {
+		this.notes[note_id] = new_content;
+	}
