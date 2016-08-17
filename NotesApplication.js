@@ -14,3 +14,6 @@ class NotesApplication {
 	get(note_id) {
 		return this.notes[note_id].toString();
 	}
+	
+	delete(note_id) {
+		this.notes.splice(note_id, 1);
