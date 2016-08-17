@@ -11,6 +11,13 @@ class NotesApplication {
 		this.notes.push(note_content);
 	}
 	
+	listNotes() {
+		for (var itemIndex in this.notes;) {
+			var item = this.notes[itemIndex];
+			console.log('\nNote ID:',itemIndex,'\n', item.toString(),'\n\nBy Author', this.author)
+		}
+	}
+	
 	get(note_id) {
 		return this.notes[note_id].toString();
 	}
