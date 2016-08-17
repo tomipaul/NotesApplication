@@ -17,3 +17,4 @@ class NotesApplication {
 	
 	delete(note_id) {
 		this.notes.splice(note_id, 1);
+	}
