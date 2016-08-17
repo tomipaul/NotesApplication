@@ -1,0 +1,3 @@
+create(note_content) {
+		this.notes.push(note_content);
+	}
